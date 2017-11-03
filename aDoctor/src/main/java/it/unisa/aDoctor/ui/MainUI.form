@@ -51,41 +51,19 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="DTWCCheck" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="EfficiencyCheck" min="-2" pref="99" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="DRCheck" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="EnergyCheck" min="-2" pref="99" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="DWCheck" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="MemoryCheck" min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="ISQLQCheck" min="-2" pref="99" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="IGSCheck" min="-2" pref="99" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              <Component id="LICCheck" min="-2" pref="99" max="-2" attributes="0"/>
-                          </Group>
+                        
                       </Group>
                       <EmptySpace pref="27" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="IDFPCheck" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
-                          <Component id="LTCheck" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
+                          <Component id="SecurityCheck" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="IDSCheck" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
-                          <Component id="MIMCheck" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="NLMRCheck" min="-2" pref="99" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="PDCheck" min="-2" pref="99" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="RAMCheck" min="-2" pref="99" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="SLCheck" min="-2" pref="99" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="UCCheck" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -116,31 +94,10 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="IDSCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="IDFPCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="DWCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="DRCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="DTWCCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="LTCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="MIMCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="ISQLQCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="IGSCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="LICCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="SLCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="UCCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="RAMCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="PDCheck" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="NLMRCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SecurityCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MemoryCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EnergyCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EfficiencyCheck" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="133" max="-2" attributes="0"/>
@@ -249,110 +206,35 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JCheckBox" name="DTWCCheck">
+    <Component class="javax.swing.JCheckBox" name="EfficiencyCheck">
       <Properties>
         <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="DTWC"/>
-        <Property name="toolTipText" type="java.lang.String" value="Data Transmission Without Compression"/>
+        <Property name="text" type="java.lang.String" value="Eff"/>
+        <Property name="toolTipText" type="java.lang.String" value="Efficiency Code Smells"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="DRCheck">
+    <Component class="javax.swing.JCheckBox" name="EnergyCheck">
       <Properties>
         <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="DR"/>
-        <Property name="toolTipText" type="java.lang.String" value="Debuggable Release"/>
+        <Property name="text" type="java.lang.String" value="Eng"/>
+        <Property name="toolTipText" type="java.lang.String" value="Energy Efficiency Code Smells"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="DWCheck">
+    <Component class="javax.swing.JCheckBox" name="MemoryCheck">
       <Properties>
         <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="DW"/>
-        <Property name="toolTipText" type="java.lang.String" value="Durable Wakelock"/>
+        <Property name="text" type="java.lang.String" value="Mem"/>
+        <Property name="toolTipText" type="java.lang.String" value="Memory Efficiency Code Smells"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="IDFPCheck">
+    <Component class="javax.swing.JCheckBox" name="SecurityCheck">
       <Properties>
         <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="IDFP"/>
-        <Property name="toolTipText" type="java.lang.String" value="Inefficient Data Format and Parser"/>
+        <Property name="text" type="java.lang.String" value="Sec"/>
+        <Property name="toolTipText" type="java.lang.String" value="Security Code Smells"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="IDSCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="IDS"/>
-        <Property name="toolTipText" type="java.lang.String" value="Inefficient Data Structure"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="ISQLQCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="ISQLQ"/>
-        <Property name="toolTipText" type="java.lang.String" value="Inefficient SQL Query"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="IGSCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="IGS"/>
-        <Property name="toolTipText" type="java.lang.String" value="Internal Getter and Setter"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="LICCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="LIC"/>
-        <Property name="toolTipText" type="java.lang.String" value="Leaking Inner Class"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="LTCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="LT"/>
-        <Property name="toolTipText" type="java.lang.String" value="Leaking Thread"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="MIMCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="MIM"/>
-        <Property name="toolTipText" type="java.lang.String" value="Member Ignoring Method"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="NLMRCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="NLMR"/>
-        <Property name="toolTipText" type="java.lang.String" value="No Low Memory Resolver"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="PDCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="PD"/>
-        <Property name="toolTipText" type="java.lang.String" value="Public Data"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="RAMCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="RAM"/>
-        <Property name="toolTipText" type="java.lang.String" value="Rigid Alarm Manager"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="SLCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="SL"/>
-        <Property name="toolTipText" type="java.lang.String" value="Slow Loop"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="UCCheck">
-      <Properties>
-        <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="UC"/>
-        <Property name="toolTipText" type="java.lang.String" value="Unclosed Closable"/>
-      </Properties>
-    </Component>
+   
+  
   </SubComponents>
 </Form>

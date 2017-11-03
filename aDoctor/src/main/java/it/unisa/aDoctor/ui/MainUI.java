@@ -46,7 +46,7 @@ public class MainUI extends javax.swing.JFrame {
         viewResults = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         statusLabel = new javax.swing.JTextArea();
-        DTWCCheck = new javax.swing.JCheckBox();
+        /*DTWCCheck = new javax.swing.JCheckBox();
         DRCheck = new javax.swing.JCheckBox();
         DWCheck = new javax.swing.JCheckBox();
         IDFPCheck = new javax.swing.JCheckBox();
@@ -61,9 +61,14 @@ public class MainUI extends javax.swing.JFrame {
         RAMCheck = new javax.swing.JCheckBox();
         SLCheck = new javax.swing.JCheckBox();
         UCCheck = new javax.swing.JCheckBox();
-
+        */
+        EfficiencyCheck = new javax.swing.JCheckBox();
+        EnergyCheck = new javax.swing.JCheckBox();
+        MemoryCheck = new javax.swing.JCheckBox();
+        SecurityCheck = new javax.swing.JCheckBox();
+        
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("aDoctor");
+        setTitle("aSniffer");
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("/aDoctor.png")).getImage());
         setResizable(false);
 
@@ -120,7 +125,7 @@ public class MainUI extends javax.swing.JFrame {
         statusLabel.setEnabled(false);
         jScrollPane1.setViewportView(statusLabel);
 
-        DTWCCheck.setSelected(true);
+        /*DTWCCheck.setSelected(true);
         DTWCCheck.setText("DTWC");
         DTWCCheck.setToolTipText("Data Transmission Without Compression");
 
@@ -179,66 +184,75 @@ public class MainUI extends javax.swing.JFrame {
         UCCheck.setSelected(true);
         UCCheck.setText("UC");
         UCCheck.setToolTipText("Unclosed Closable");
-
+        */
+        
+        EfficiencyCheck.setSelected(true);
+        EfficiencyCheck.setText("Eff");
+        EfficiencyCheck.setToolTipText("Efficiency Check");
+        
+        EnergyCheck.setSelected(true);
+        EnergyCheck.setText("Eng");
+        EnergyCheck.setToolTipText("Energy Check");
+        
+        MemoryCheck.setSelected(true);
+        MemoryCheck.setText("Mem");
+        MemoryCheck.setToolTipText("Memory Check");
+        
+        SecurityCheck.setSelected(true);
+        SecurityCheck.setText("Sec");
+        SecurityCheck.setToolTipText("Security Check");
+        
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
+        layout.setHorizontalGroup
+        (
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(  javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(  layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(  javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(  layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(jLabel2))
+                            .addComponent(jLabel2)
+                                 )
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(  layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(outputFileField)
-                            .addComponent(inputFolderField))
+                            .addComponent(inputFolderField)
+                                 )
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(  layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(inputFolderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(outputFolderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(DTWCCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(outputFolderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                 )
+                             )
+                    .addGroup(  layout.createSequentialGroup()
+                        .addGroup(  layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(  layout.createSequentialGroup()
+                                .addComponent(EfficiencyCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(DRCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(EnergyCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(DWCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(ISQLQCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(IGSCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(LICCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(MemoryCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                     )
+                                )
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(IDFPCheck, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LTCheck, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(  layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SecurityCheck, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                 )
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(IDSCheck, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(MIMCheck, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(NLMRCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(PDCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(RAMCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(SLCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(UCCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
+                             )
+                    )
+                .addContainerGap()
+                     )
+            .addGroup(  layout.createSequentialGroup()
                 .addGap(107, 107, 107)
                 .addComponent(startProcessButton, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(viewResults, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                     )
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -255,27 +269,12 @@ public class MainUI extends javax.swing.JFrame {
                     .addComponent(outputFolderButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(IDSCheck)
-                    .addComponent(IDFPCheck)
-                    .addComponent(DWCheck)
-                    .addComponent(DRCheck)
-                    .addComponent(DTWCCheck))
+                    .addComponent(SecurityCheck)
+                    .addComponent(MemoryCheck)
+                    .addComponent(EnergyCheck)
+                    .addComponent(EfficiencyCheck))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(LTCheck)
-                        .addComponent(MIMCheck))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(ISQLQCheck)
-                        .addComponent(IGSCheck)
-                        .addComponent(LICCheck)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SLCheck)
-                    .addComponent(UCCheck)
-                    .addComponent(RAMCheck)
-                    .addComponent(PDCheck)
-                    .addComponent(NLMRCheck))
+                
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -295,9 +294,41 @@ public class MainUI extends javax.swing.JFrame {
         viewResults.setEnabled(false);
         String inputPath = this.inputFolderField.getText();
         String outputPath = this.outputFileField.getText();
-        Integer[] smellTypesNeeded = new Integer[15];
-        int numOfSmells = 0;
-        if (DTWCCheck.isSelected()) {
+        Integer[] smellTypesNeeded = {0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,0}; //initialize all smells to 0
+        int numOfEffects = 0;
+        
+        if(EfficiencyCheck.isSelected()){
+            smellTypesNeeded[3] = 1; //IDFP
+            smellTypesNeeded[4] = 1; //IDS
+            smellTypesNeeded[5] = 1; //ISQLQ
+            smellTypesNeeded[6] = 1; //IGS
+            smellTypesNeeded[9] = 1; //MIM
+            smellTypesNeeded[12] = 1; //RAM
+            smellTypesNeeded[13] = 1; //SL
+            numOfEffects++;
+        }
+        
+        if(EnergyCheck.isSelected()){
+            smellTypesNeeded[0] = 1;  //DTWC
+            smellTypesNeeded[2] = 1;  //DW
+            smellTypesNeeded[12] = 1; //RAM
+            numOfEffects++;
+        }
+        
+        if(MemoryCheck.isSelected()){
+            smellTypesNeeded[7] = 1; //LIC
+            smellTypesNeeded[8] = 1; //LT
+            smellTypesNeeded[10] = 1; //NLMR
+            smellTypesNeeded[14] = 1; //UC
+            numOfEffects++;
+        }
+        
+        if(SecurityCheck.isSelected()){
+            smellTypesNeeded[1] = 1;
+            smellTypesNeeded[11] = 1;
+            numOfEffects++;
+        }
+        /*if (DTWCCheck.isSelected()) {
             smellTypesNeeded[0] = 1;
             numOfSmells++;
         } else {
@@ -386,7 +417,7 @@ public class MainUI extends javax.swing.JFrame {
             numOfSmells++;
         } else {
             smellTypesNeeded[14] = 0;
-        }
+        }*/
         String smellTypesString = StringUtils.join(smellTypesNeeded);
         boolean valid = true;
         if (inputPath.isEmpty()) {
@@ -397,8 +428,8 @@ public class MainUI extends javax.swing.JFrame {
             System.out.println("Output file not selected.");
             valid = false;
         }
-        if (numOfSmells == 0) {
-            System.out.println("None of the smells has been selected.");
+        if (numOfEffects == 0) {
+            System.out.println("None of the effects has been selected.");
             valid = false;
         }
         if (valid == false) {
@@ -480,7 +511,7 @@ public class MainUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox DRCheck;
+    /*private javax.swing.JCheckBox DRCheck;
     private javax.swing.JCheckBox DTWCCheck;
     private javax.swing.JCheckBox DWCheck;
     private javax.swing.JCheckBox IDFPCheck;
@@ -494,7 +525,13 @@ public class MainUI extends javax.swing.JFrame {
     private javax.swing.JCheckBox PDCheck;
     private javax.swing.JCheckBox RAMCheck;
     private javax.swing.JCheckBox SLCheck;
-    private javax.swing.JCheckBox UCCheck;
+    private javax.swing.JCheckBox UCCheck;*/
+    
+    private javax.swing.JCheckBox EfficiencyCheck;
+    private javax.swing.JCheckBox EnergyCheck;
+    private javax.swing.JCheckBox MemoryCheck;
+    private javax.swing.JCheckBox SecurityCheck;
+    
     private javax.swing.JButton inputFolderButton;
     private javax.swing.JTextField inputFolderField;
     private javax.swing.JLabel jLabel1;
